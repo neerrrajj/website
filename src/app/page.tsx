@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from "react-icons/fi";
-import { IoIosArrowForward } from "react-icons/io";
 
 const socials = [
   {
