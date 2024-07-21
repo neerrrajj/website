@@ -66,10 +66,9 @@ export default function About() {
         open for work
       </div>
       <p className="mb-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat esse
-        dolore amet in quam at quod doloremque quae consequuntur quo dignissimos
-        mollitia reiciendis quasi porro, minima aliquid blanditiis architecto!
-        Aut?
+        hello friend, this is neeraj, a cybersecurity professional transitioning
+        into software engineering, with a keen interest across the complete
+        stack, learning and building applications for fun.
       </p>
       <button className="rounded bg-zinc-200 text-black mb-12 px-4 py-2">
         download resume
