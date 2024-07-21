@@ -2,8 +2,6 @@ import prisma from "@/lib/db";
 import Link from "next/link";
 
 export default async function Projects() {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-
   const projects = await prisma.project.findMany({
     take: 3,
     orderBy: {
@@ -22,12 +20,14 @@ export default async function Projects() {
   return (
     <ul className="mb-6">
       {projects.map((project) => (
-        <li key={project.id} className="mb-4">
+        <li key={project.id} className="mb-6">
           <Link
             href={`/projects#${project.id}`}
             className="hover:text-zinc-100 duration-300 ease-in-out"
           >
-            <p>{project.name}</p>
+            <p className="text-zinc-300 underline decoration-1 decoration-zinc-500 underline-offset-4">
+              {project.name}
+            </p>
             <p>{truncatedDescription(project.description, 10)}</p>
           </Link>
         </li>

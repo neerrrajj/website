@@ -27,7 +27,7 @@ export default function ProjectList({ project }: { project: Project }) {
         >
           {project.name}
         </h1>
-        <div className="flex ">
+        <div className="flex gap-x-2">
           {project.liveUrl ? (
             <Social icon={<TbWorld />} label="website" href={project.liveUrl} />
           ) : (
