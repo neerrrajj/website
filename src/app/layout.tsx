@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import "./globals.css";
 import Header from "@/components/header";
 import Container from "@/components/container";
@@ -11,12 +12,6 @@ export const metadata: Metadata = {
   description: "neeraj's portfolio",
 };
 
-const backgroundStyle = {
-  backgroundColor: "#000000",
-  backgroundImage: "radial-gradient(circle, #202020 1px, transparent 1px)",
-  backgroundSize: "20px 20px",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        style={backgroundStyle}
-        className={`text-zinc-400 ${inter.className}`}
+        className={`text-zinc-400 bg-black bg-[radial-gradient(circle,#202020_1px,transparent_1px)] bg-[size:20px_20px] ${inter.className}`}
       >
-        <Header />
-        <Container>{children}</Container>
+        <div></div>
+        <div>
+          <Header />
+          <Container>{children}</Container>
+        </div>
       </body>
     </html>
   );

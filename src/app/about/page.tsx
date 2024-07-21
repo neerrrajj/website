@@ -1,10 +1,10 @@
-import Socials from "@/components/socials";
 import { Card, CardImage } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import Socials from "@/components/socials";
 
 export default function About() {
   const skills = [
@@ -32,7 +32,7 @@ export default function About() {
 
   const quotes = [
     {
-      text: "I know of no better life purpose than to perish in attempting the great and the impossible.",
+      text: "I know of no better life purpose than to perish in attempting the great and impossible. The only true failure is shrinking away from life's challenges.",
       author: "Friedrich Nietzsche",
     },
     {
@@ -42,16 +42,16 @@ export default function About() {
   ];
 
   const photos = [
-    "/photo.jpg",
-    "/photo1.jpg",
-    "/photo2.jpg",
     "/photo3.jpg",
-    "/photo4.png",
     "/photo5.png",
     "/photo6.png",
+    "/photo1.jpg",
+    "/photo2.jpg",
     "/photo7.png",
     "/photo8.png",
     "/photo9.png",
+    "/photo.jpg",
+    "/photo4.png",
   ];
 
   return (
@@ -67,12 +67,14 @@ export default function About() {
       </div>
       <p className="mb-6">
         hello friend, this is neeraj, a cybersecurity professional transitioning
-        into software engineering, with a keen interest across the complete
-        stack, learning and building applications for fun.
+        to software engineering, with a keen interest across the complete stack,
+        learning and building applications for fun.
       </p>
-      <button className="rounded bg-zinc-200 text-black mb-12 px-4 py-2">
-        download resume
-      </button>
+      <div className="inline-flex rounded bg-zinc-200 text-black mb-12 px-4 py-2">
+        <a href="/resume.pdf" download="Neeraj-Resume">
+          download resume
+        </a>
+      </div>
       <p className="font-semibold text-2xl mb-4 text-zinc-300">
         things that i can work with
       </p>
@@ -144,7 +146,7 @@ export default function About() {
       <ul className="mb-12">
         {quotes.map((quote) => (
           <li key={quote.author} className="mb-6">
-            <div className="border-l-4 border-zinc-300 pl-2 pr-1 py-2 rounded bg-zinc-900">
+            <div className="border-l-4 border-zinc-300 p-3 rounded bg-zinc-900">
               <p className="text-base">{quote.text}</p>
               <p className="text-sm italic mt-1 text-zinc-500">
                 {quote.author}

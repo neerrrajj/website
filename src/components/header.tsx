@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
 import neerajLogo from "/public/neeraj-logo.png";
 
 const navLinks = [
@@ -20,12 +21,12 @@ export default function Header() {
   const pathName = usePathname();
 
   return (
-    <header className="flex items-center justify-between pl-4 pr-6 pt-2 md:pt-4 pb-4">
+    <header className="flex items-center justify-between pl-4 pr-6 pt-2 pb-4 md:pt-4 md:pl-8 md:pr-10">
       <Link href="/">
         <Image src={neerajLogo} alt="logo" width={80} />
       </Link>
       <nav>
-        <ul className="flex gap-x-4">
+        <ul className="flex gap-x-4 md:gap-x-8">
           {navLinks.map((navLink) => (
             <li key={navLink.href}>
               <Link
