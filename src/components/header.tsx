@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import neerajLogo from "/public/neeraj-logo.png";
 
 const navLinks = [
   {
@@ -18,8 +20,10 @@ export default function Header() {
   const pathName = usePathname();
 
   return (
-    <header className="flex justify-between px-10 py-8">
-      <Link href="/">logo</Link>
+    <header className="flex items-center justify-between pl-4 pr-6 pt-2 md:pt-4 pb-4">
+      <Link href="/">
+        <Image src={neerajLogo} alt="logo" width={80} />
+      </Link>
       <nav>
         <ul className="flex gap-x-4">
           {navLinks.map((navLink) => (

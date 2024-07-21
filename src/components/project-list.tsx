@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { FiGithub } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
-import Social from "./social";
+import { Social } from "./socials";
 
 type Project = {
   id: number;
@@ -37,13 +37,16 @@ export default function ProjectList({ project }: { project: Project }) {
         </div>
       </div>
       <p>{project.description}</p>
-      <div className="flex gap-x-4 my-6">
+      <ul className="flex gap-x-4 my-6">
         {labels.map((label) => (
-          <p className="bg-zinc-700 px-3 py-1 rounded text-zinc-200 text-sm">
-            {label}
-          </p>
+          <li
+            key={label}
+            className="bg-zinc-700 px-3 py-1 rounded text-zinc-200 text-sm"
+          >
+            <p>{label}</p>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
