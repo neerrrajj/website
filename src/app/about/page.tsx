@@ -127,16 +127,16 @@ export default function About() {
       <p className="mb-12">
         i always wanted to make a movie. apart from that i want to go Iceland,
         learn a martial art and play music. i want to learn to cook, run a 10K,
-        build a SaaS and learn skating. i'd also like a camper van.
+        build a SaaS and learn skating. i&apos;d also like a camper van.
       </p>
       <p className="font-semibold text-2xl mb-4 text-zinc-300">
-        things that i'm proud of
+        things that i&apos;m proud of
       </p>
       <p className="mb-12">
         i have always been the guy who turns down plans. but this year, i went
-        to Thailand with my boys. also went to a concert, an IPL match. i'm also
-        very proud that i quit the job i didn't like and that i'm pursuing what
-        i've always wanted to do.
+        to Thailand with my boys. also went to a concert, an IPL match. i&apos;m
+        also very proud that i quit the job i didn&apos;t like and that i&apos;m
+        pursuing what i&apos;ve always wanted to do.
       </p>
       <p className="font-semibold text-2xl mb-1 text-zinc-300">
         things that i live by
