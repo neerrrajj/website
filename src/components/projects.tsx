@@ -14,6 +14,7 @@ export async function TopProjects() {
       createdAt: "desc",
     },
   });
+  console.log("topProjects:", topProjects);
 
   const truncatedDescription = (des: string, limit: number) => {
     if (des.length <= limit) {
@@ -56,6 +57,7 @@ export async function AllProjects() {
       createdAt: "desc",
     },
   });
+  console.log("allProjects:", allProjects);
 
   return (
     <ul>
@@ -63,7 +65,7 @@ export async function AllProjects() {
         <li key={project.id}>
           <div className="h-[1px] bg-zinc-800 flex-grow mb-6" />
           <div>
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex flex-wrap items-center justify-between mb-6">
               <h1
                 className="text-lg font-semibold text-zinc-200"
                 id={project.id.toString()}
