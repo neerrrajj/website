@@ -14,7 +14,6 @@ export async function TopProjects() {
       createdAt: "desc",
     },
   });
-  console.log("topProjects:", topProjects);
 
   const truncatedDescription = (des: string, limit: number) => {
     if (des.length <= limit) {
@@ -57,7 +56,6 @@ export async function AllProjects() {
       createdAt: "desc",
     },
   });
-  console.log("allProjects:", allProjects);
 
   return (
     <ul>

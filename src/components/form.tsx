@@ -11,13 +11,13 @@ export default function Form() {
         name="project-name"
         type="text"
         placeholder="project name"
-        className="border border-zinc-600 rounded px-4 h-10 bg-black text-zinc-100"
+        className="border border-zinc-600 rounded px-4 h-10 bg-black text-zinc-100 placeholder-zinc-500"
         required
       />
       <textarea
         name="project-description"
         placeholder="project description"
-        className="border border-zinc-600 rounded px-3 py-2 bg-black text-zinc-100"
+        className="border border-zinc-600 rounded px-3 py-2 bg-black text-zinc-100 placeholder-zinc-500"
         rows={7}
         required
       />
@@ -25,20 +25,20 @@ export default function Form() {
         name="project-labels"
         type="text"
         placeholder="project labels"
-        className="border border-zinc-600 rounded px-4 h-10 bg-black text-zinc-100"
+        className="border border-zinc-600 rounded px-4 h-10 bg-black text-zinc-100 placeholder-zinc-500"
         required
       />
       <input
         name="project-live-url"
         type="text"
         placeholder="project live url"
-        className="border border-zinc-600 rounded px-4 h-10 bg-black text-zinc-100"
+        className="border border-zinc-600 rounded px-4 h-10 bg-black text-zinc-100 placeholder-zinc-500"
       />
       <input
         name="project-code-url"
         type="text"
         placeholder="project code url"
-        className="border border-zinc-600 rounded px-4 h-10 bg-black text-zinc-100"
+        className="border border-zinc-600 rounded px-4 h-10 bg-black text-zinc-100 placeholder-zinc-500"
         required
       />
       <div className="flex gap-x-2 mt-4">
