@@ -10,7 +10,7 @@ export const TopProjectsSkeleton = () => {
             border-zinc-900 bg-gradient-to-t from-zinc-900 bg-black"
           >
             <div>
-              <p className="text-zinc-300 bg-zinc-800 h-6 w-36 rounded"></p>
+              <p className="text-zinc-300 bg-zinc-800 h-6 w-36 mb-4 rounded"></p>
               <p className="bg-zinc-800 h-3 w-56 rounded mt-3"></p>
               <p className="bg-zinc-800 h-3 w-56 rounded mt-2"></p>
             </div>

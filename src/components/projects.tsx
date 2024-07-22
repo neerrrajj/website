@@ -31,10 +31,10 @@ export async function TopProjects() {
           <Link href={`/projects#${project.id}`}>
             <div
               className="flex items-center justify-between p-3 rounded-md border border-zinc-900 
-              bg-gradient-to-t from-zinc-900 bg-black hover:bg-zinc-900 duration-500 ease-in-out"
+              bg-gradient-to-t from-zinc-900 bg-black hover:bg-zinc-900 duration-300 ease-in-out"
             >
               <div>
-                <p className="text-zinc-300 mb-1">{project.name}</p>
+                <p className="text-zinc-300 mb-2 ">{project.name}</p>
                 <p className="text-sm">
                   {truncatedDescription(project.description, 60)}
                 </p>
@@ -70,7 +70,7 @@ export async function AllProjects() {
               >
                 {project.name}
               </h1>
-              <div className="flex gap-x-2">
+              <div className="flex gap-x-4">
                 {project.liveUrl ? (
                   <Social
                     icon={<TbWorld />}
@@ -88,11 +88,11 @@ export async function AllProjects() {
               </div>
             </div>
             <p>{project.description}</p>
-            <ul className="flex gap-x-4 my-6">
+            <ul className="flex flex-wrap gap-x-4 my-6">
               {project.labels.split(",").map((label) => (
                 <li
                   key={label}
-                  className="bg-zinc-800 px-3 py-1 rounded text-zinc-200 text-sm"
+                  className="bg-zinc-800 px-3 py-1 rounded text-zinc-200 text-sm my-2"
                 >
                   <p>{label}</p>
                 </li>
