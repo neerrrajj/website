@@ -10,9 +10,10 @@ export default function Home() {
     <main>
       <h1 className="font-extrabold text-4xl mb-6 text-zinc-200">neeraj</h1>
       <p className="mb-4">
-        hello friend, this is neeraj, a cybersecurity professional transitioning
-        to software engineering, with a keen interest across the complete stack,
-        learning and building applications for fun.
+        hello friend, this is neeraj. i love beautiful design and i love to
+        code. generally curious, mostly optimistic. a cybersecurity professional
+        transitioning to software engineering, learning and building
+        applications for fun.
       </p>
       <div className="mb-8">
         <More text="more about me" href="/about" />

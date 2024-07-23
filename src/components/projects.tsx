@@ -63,11 +63,11 @@ export async function AllProjects() {
         <li key={project.id}>
           <div className="h-[1px] bg-zinc-800 flex-grow mb-6" />
           <div>
-            <div className="flex flex-wrap items-center justify-between mb-6">
-              <h1
-                className="text-lg font-semibold text-zinc-200"
-                id={project.id.toString()}
-              >
+            <div
+              id={project.id.toString()}
+              className="flex flex-wrap items-center justify-between mb-6 gap-x-4"
+            >
+              <h1 className="text-lg font-semibold text-zinc-200">
                 {project.name}
               </h1>
               <div className="flex gap-x-4">

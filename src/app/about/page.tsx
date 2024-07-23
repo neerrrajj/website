@@ -66,9 +66,10 @@ export default function About() {
         open for work
       </div>
       <p className="mb-6">
-        hello friend, this is neeraj, a cybersecurity professional transitioning
-        to software engineering, with a keen interest across the complete stack,
-        learning and building applications for fun.
+        hello friend, this is neeraj. i love beautiful design and i love to
+        code. generally curious, mostly optimistic. a cybersecurity professional
+        transitioning to software engineering, learning and building
+        applications for fun.
       </p>
       <div className="inline-flex rounded bg-zinc-200 text-black mb-12 px-4 py-2">
         <a href="/resume.pdf" download="Neeraj-Resume">
